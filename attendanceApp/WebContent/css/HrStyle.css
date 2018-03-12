@@ -1,0 +1,48 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(../pictures/innerPic.jpg);
+	background-size:contain;
+	background-position: top center;
+	font-family: sans-serif;
+	
+}
+.tablebox1{
+	width:450px;
+	height: 320px;
+	background: rgba(0,0,0,0.5);
+	color: black;
+	top:55%;
+	left:25%;
+	position:absolute;
+	transform:translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 30px 30px;
+	
+}
+.tablebox2{
+	width:450px;
+	height: 320px;
+	background: rgba(0,0,0,0.5);
+	color: black;
+	top:55%;
+	left:75%;
+	position:absolute;
+	transform:translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 30px 30px;
+	
+}
+.tablebox1 input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #1c8adb;
+	color:#fff;
+	font-size: 18px;
+}
+.tablebox1 input[type="submit"]:hover{
+	cursor: pointer;
+	background: #39dc79;
+	color:#000;
+}

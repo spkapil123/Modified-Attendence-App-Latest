@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Registration form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+</head>
+<body>
+	<h3 align="right"><a href="Login.jsp">Login</a></h3>
+	<div class="container">
+		<h1>REGISTER</h1>
+		<form id="registration_form" action="register" method="POST">
+			<div>
+				<h4 style="color:violet;">Select an Employee Type below</h4>
+				<input type = "radio" name = "person" value = "employee" required> 
+          		<span style="color:violet;font-weight: bold;">Employee</span>
+         		<input type = "radio" name = "person" value = "hr" required>
+         		<span style="color:violet;font-weight: bold;">HR</span>
+			</div>
+			<div>
+				<input type="text" id="form_fname" name="firstName" required>
+				<span class="error_form" id="fname_error_message"></span>
+				<label>
+					First Name
+				</label>	
+			</div>
+			<div>
+				<input type="text" id="form_sname" name="lastName">
+				<span class="error_form" id="sname_error_message"></span>
+				<label>
+					Last Name
+				</label>	
+			</div>
+			<div>
+				<input type="text" id="form_userName" name="userName" required>
+				<span class="error_form" id="userName_error_message"></span>
+				<label>
+					Username
+				</label>	
+			</div>
+			<div>
+				<input type="email" id="form_email" name="email" required>
+				<span class="error_form" id="email_error_message"></span>
+				<label>Email id</label>	
+			</div>
+			<div>
+				<input type="password" id="form_password" name="password" required>
+				<span class="error_form" id="password_error_message"></span>
+				<label>Password</label>	
+			</div>
+			<div>
+				<input type="password" id="form_retype_password" name="" required>
+				<span class="error_form" id="retype_password_error_message"></span>
+				<label>Re-Enter Password</label>	
+			</div>
+			<input type="submit" value="Register">
+		</form>
+	</div>
+	<script src="javaScript/myScript.js"></script>
+</body>
+</html>
